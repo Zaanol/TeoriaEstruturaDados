@@ -1,0 +1,46 @@
+<html>
+	<head>
+	  <meta charset="utf-8">
+			<title>Tradutor Morse TOP</title>
+			<script src="js/jquery-1.11.1.min.js"></script>
+			<link rel="icon" href="img/icone.ico" type="image/x-icon" />
+			<link rel="shortcut icon" href="img/icone.ico" type="image/x-icon" />
+			<script type="text/javascript" src="js/Funcoes.js"></script>
+			<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+			<link href="css/style.css" rel="stylesheet" id="bootstrap-css">
+			<script src="js/bootstrap.min.js"></script>
+			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<header class="masthead d-flex">
+		<div >
+		    <div class="modal-dialog">
+	      		<div class="modal-content">
+		         <div class="modal-header">
+		            <h3>Tradutor morse</h3>
+		        </div>
+		        <div class="modal-body">
+		        	<center>
+		            <textarea class="form-control form-control-sm" id="texto" placeholder="Digite aqui o texto" for="exampleFormControlSelect2" style="width: 560px; height: 75px;"></textarea><br><br>
+		            <select id="opcao" class="form-control form-control-sm">
+						<option value="1">Descriptografar 1</option>
+						<option value="2">Descriptografar 2</option>
+						<option value="3">Criptografar</option>
+					</select><Br>
+		            <a class="btn btn-primary" onclick="separarValor(texto.value, opcao.value)">Converter</a>
+		        	<hr>
+		            <div id="resultado"></div>
+		            <div id="log"></div>
+		            </center>
+		   		</div>
+			</div><Br>
+	</header>
+
+		<footer class="footer text-center">
+      		<div class="container">
+        		<p class="text-muted small mb-0">Copyright &copy; 2018 Willian Zanol & Danrlei Correa</p>
+      		</div>
+    	</footer>
+	</body>
+</html>
