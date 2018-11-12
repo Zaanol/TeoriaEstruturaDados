@@ -340,11 +340,14 @@ function separarValor(valor, tipo){
 				decodificacao = "A conversão retornou erros";
 			}
 		}else if(tipo == 3){
-			if(valor.indexOf("-") != -1 || valor.indexOf(".") != -1){
+			if(valor.indexOf("-") != -1 && valor.indexOf(".") != -1){
 				decodificacao = "A conversão retornou erros";
 			}else{
 				VetorLetras[0] = valor.toUpperCase().split("");
 				for (var i = 0; i <= VetorLetras[0].length - 1; i++) {
+					if(VetorLetras[0][i] == "Ç") VetorLetras[0][i] = "C";
+					if(VetorLetras[0][i] == "Ã") VetorLetras[0][i] = "A";
+					if(VetorLetras[0][i] == "É") VetorLetras[0][i] = "E";
 					buscarMorse(arvore, VetorLetras[0][i]);
 				}
 			}
